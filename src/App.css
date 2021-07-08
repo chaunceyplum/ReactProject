@@ -1,38 +1,57 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.homeimg {
+  max-height: 100vh;
+  width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.homeflick{
+  height: 200px;
+  width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.spacer {
+  text-align: center;
+  padding-top:25px ;
+  padding-bottom: 25px;
+  
+}
+.center {
+  align-self: center;
+  justify-self: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-items: center;
+  text-align: center;
 }
+.bgcolor {
+  background-color: rgb(89,89, 89);
+  color:white;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footercolor {
+  background-color: rgb(39,39, 39);
+  color:white;
+}
+.bgcolorcontact {
+  background-color: rgb(99,99, 99);
+  color:white;
+}
+.bgcolorcontactform {
+  background-color: rgb(89,89, 89);
+  color:white;
+}
+.pcolor {
+  background-color: rgb(129,129, 129);
+}
+.formy{
+  padding-top:20px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-bottom:20px;
+  border-radius: 25px;
+  opacity: .7;
+  box-shadow: 10px 10px 5px rgb(39,39, 39);;
+}
+.contactSpacer{
+  padding-top:100px ;
+  padding-bottom: 100px;
 }
