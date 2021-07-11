@@ -42,6 +42,22 @@
 .pcolor {
   background-color: rgb(129,129, 129);
 }
+.portcolor {
+  background-color: rgb(69,69, 69);
+  color:white;
+  padding-top:30px;
+  padding-bottom: 30px;
+}
+.cards {
+  background-color: rgb(49,49, 49) !important;
+  border-color: black !important;
+  padding-top:30px;
+  padding-bottom: 30px;
+  
+  
+ 
+  
+}
 .formy{
   padding-top:20px;
   padding-left:20px;
@@ -49,7 +65,7 @@
   padding-bottom:20px;
   border-radius: 25px;
   opacity: .7;
-  box-shadow: 10px 10px 5px rgb(39,39, 39);;
+  box-shadow: 10px 10px 5px rgb(39,39, 39);
 }
 .contactSpacer{
   padding-top:100px ;
