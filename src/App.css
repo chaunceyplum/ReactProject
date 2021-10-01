@@ -13,6 +13,8 @@
   text-align: center;
   padding-top:25px ;
   padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
   
 }
 .center {
@@ -70,4 +72,21 @@
 .contactSpacer{
   padding-top:100px ;
   padding-bottom: 100px;
+}
+.page-enter {
+  opacity: 0;
+}
+
+.page-enter-active {
+  opacity: 1;
+  transition: 300ms ease-out;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: 300ms ease-in;
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Container, Row,Card,CardTitle,CardBody,CardImg, CardImgOverlay, Button, CardText, CardHeader } from 'reactstrap'
+import { Col, Row,Card,CardTitle,CardBody,CardImg, CardText, CardHeader } from 'reactstrap'
 
 
 
@@ -9,7 +9,7 @@ class Portfolio extends React.Component {
         this.state={
             mohawkName:"Mohawk",
             mohawkPrice:20,
-            mohawkImage:'/mohawk.jpeg',
+            mohawkImage:'./mohawk.jpeg',
             description: "mohawk (also referred to as a Mohican) is a hairstyle in which, in the most common variety, both sides of the head are shaven, leaving a strip of noticeably longer hair in the center. It is today worn as an emblem of non-conformity.",
             fadeName:"Fade",
             fadeImage:'',
@@ -22,9 +22,41 @@ class Portfolio extends React.Component {
             baldyName:"Baldy",
             baldyImage:"",
             baldyPrice: 20,
-            baldyDescription: "A baldy cut is a great choice for men for a lot of different reasons. Firstly, they are very easy to style and maintain. When you get up in the morning, you do not need to take a long time fiddling with your look."
+            baldyDescription: "A baldy cut is a great choice for men for a lot of different reasons. Firstly, they are very easy to style and maintain. When you get up in the morning, you do not need to take a long time fiddling with your look.",
+        
+            loading: true
         }
     }
+
+    Rendercard = () => {
+        
+        return(
+            <div></div>
+        )
+    }
+    async componentDidMount (){
+        const url ="https://localhost:3000"
+         const res = await fetch(url,
+           { method: 'Get', // *GET, POST, PUT, DELETE, etc.
+            mode: 'no-cors', // no-cors, *cors, same-origin
+            cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached})
+        }
+        )
+        const data = await res
+        console.log(data.json)
+
+    }
+
+    // fetchy = () => {
+    //     return fetch('http://localhost:3443/cuts/', {
+    //         method: 'GET'
+    //     }).then((response) => {
+    //         console.log(response);
+    //     })
+    // }
+
+    
+    
 
 
     render(){
@@ -35,7 +67,7 @@ class Portfolio extends React.Component {
                     <h1 className="center spacer">My Specialty Cuts</h1>
                     
                         
-                    <Row>
+                    {/* <Row>
                         <Col>
                         <Card bg="dark" >
                             <CardHeader className="cards">
@@ -107,7 +139,9 @@ class Portfolio extends React.Component {
                             
                         </Card>
                         </Col>
-                    </Row>
+                    </Row> */}
+
+
                 
             </div>
         )
