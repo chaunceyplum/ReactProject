@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Nav, NavbarBrand, NavItem, NavLink, NavbarToggler, Collapse, Navbar, Button, ModalHeader, ModalBody, Modal, ModalFooter} from 'reactstrap';
+import { Nav, NavbarBrand, NavItem, NavLink, NavbarToggler, Collapse, Navbar, Button, ModalHeader, ModalBody, Modal, ModalFooter, Container} from 'reactstrap';
 import ModalComponent from './modal';
 
 
@@ -17,6 +17,7 @@ const Mynav = (props) => {
     
     return (
         <div >
+            <Container >
             <Navbar fixed="top" color="" dark  expand="md" variant="light">
                 <NavbarBrand className="nav-brand text-light" href="/home">
                     <h1>
@@ -32,7 +33,7 @@ const Mynav = (props) => {
                 <Collapse isOpen={isOpen} navbar  className="justify-content-end">
                     <Nav className="ml-auto " bsStyle="pills" navbar>
                         <NavItem className="nav-link">
-                            <NavLink href="/home"> Home</NavLink>
+                            <NavLink className="text-white" href="/home"> Home</NavLink>
                         </NavItem>
                         
                         <NavItem className="nav-link">
@@ -49,6 +50,7 @@ const Mynav = (props) => {
                         login
                 </Button> */}
             </Navbar>
+            </Container>
         </div>
     )
 }
