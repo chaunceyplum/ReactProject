@@ -84,7 +84,7 @@ const validPassword = val => /^(?=.*\d)[a-zA-Z0-9]{8,16}$/
                                 Password
                             </Label>
                             <Col />
-                            <Col className="col-8 center align-center" xs={10}>
+                            <Col className="col-8 center " xs={10}>
                                 <Control.text model=".password" id="password" name="password" placeholder="Password" className="form-control" validators={{required, validPassword}} />
                                 <Errors
                                         className="text-danger"
