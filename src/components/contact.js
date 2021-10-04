@@ -9,6 +9,7 @@ const maxLength = len => val => !val || (val.length <= len);
 const minLength = len => val => val && (val.length >= len);
 const isNumber = val => !isNaN(+val);
 const validEmail = val => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
+const validPassword = val => /^(?=.*\d)[a-zA-Z0-9]{8,16}$/
 
 
 
@@ -17,7 +18,9 @@ const validEmail = val => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
             <div className="bgcolor contactSpacer ">
                 <Container className="bgcolorcontact formy">
                     <LocalForm className="bgcolorcontact">
-                        <h1 className="text-center">Contact Us</h1>
+                        <h1 className="text-center">
+                            Sign Up
+                        </h1>
                         <Row className="form-group">
                             <Label htmlFor="name" className="text-center spacer" placeholder="name">Name</Label>
                             <Col />
@@ -73,9 +76,30 @@ const validEmail = val => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
                                         }}
                                     />
                             </Col>
+
                             <Col />
                         </Row>
-                        <Row>
+                        <Row className="form-group ">
+                            <Label htmlFor="password"  className="text-center spacer " >
+                                Password
+                            </Label>
+                            <Col />
+                            <Col className="col-8 center align-center" xs={10}>
+                                <Control.text model=".password" id="password" name="password" placeholder="Password" className="form-control" validators={{required, validPassword}} />
+                                <Errors
+                                        className="text-danger"
+                                        model=".password"
+                                        show="touched"
+                                        component="div"
+                                        messages={{
+                                            required: 'Invalid Password',
+                                            validPassword: 'Invalid Password'
+                                        }}
+                                    />
+                            </Col>
+                            <Col />
+                        </Row>
+                        <Row >
                             <Col className="center spacer">
                                 <Button className="btn btn-lg bg-muted text-white btn-outline-muted" xs={2}>Submit</Button>
                             </Col>

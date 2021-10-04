@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Nav, NavbarBrand, NavItem, NavLink, NavbarToggler, Collapse, Navbar, Button, ModalHeader, ModalBody, Modal, ModalFooter} from 'reactstrap';
+import ModalComponent from './modal';
 
 
 
@@ -10,50 +11,22 @@ const Mynav = (props) => {
     const toggle = () => setOpen(!isOpen);
 
 
-    const [show,setShow] = useState(false)
+    
 
-    const showing = () =>setShow(false)
-    const closing = () =>setShow(true)
-
-    const modal = () => {
-        return (
-            <div>
-                <Modal
-                show={show}
-                onHide={closing}
-                >
-                    <ModalHeader>
-                        <strong>
-                            Register
-                        </strong>
-                    </ModalHeader>
-                    <ModalBody>
-                        
-                    </ModalBody>
-                    <ModalFooter>
-                        <Button>
-                            Cancel
-                        </Button>
-                        <Button>
-                            Save Changes
-                        </Button>
-
-                    </ModalFooter>
-
-                </Modal>
-            </div>
-        )
-    }
+    
     
     return (
         <div >
-            <Navbar color="dark" dark expand="md" variant="light">
+            <Navbar fixed="top" color="" dark  expand="md" variant="light">
                 <NavbarBrand className="nav-brand text-light" href="/home">
                     <h1>
                         Classy Cutz
                     </h1>
                 </NavbarBrand>
-
+                {/* <Button className = "col-sm-2 col-md-1 align-right" onClick={ModalComponent} >
+                        login
+                </Button> */}
+                <ModalComponent />
                 <NavbarToggler onClick={toggle} />
 
                 <Collapse isOpen={isOpen} navbar  className="justify-content-end">
@@ -72,9 +45,9 @@ const Mynav = (props) => {
                     </Nav>
                     
                 </Collapse>
-                <Button className = " " onClick={modal} >
+                {/* <Button className = " " onClick={modal} >
                         login
-                </Button>
+                </Button> */}
             </Navbar>
         </div>
     )

@@ -5,17 +5,16 @@
   max-height: 100vh;
   width: 100%;
 }
-.homeflick{
+.homeflick {
   height: 200px;
   width: 100%;
 }
 .spacer {
   text-align: center;
-  padding-top:25px ;
+  padding-top: 25px;
   padding-bottom: 25px;
   padding-left: 25px;
   padding-right: 25px;
-  
 }
 .center {
   align-self: center;
@@ -25,52 +24,48 @@
   text-align: center;
 }
 .bgcolor {
-  background-color: rgb(89,89, 89);
-  color:white;
-
+  background-color: rgb(89, 89, 89);
+  color: white;
 }
 .footercolor {
-  background-color: rgb(39,39, 39);
-  color:white;
+  background-color: rgb(39, 39, 39);
+  color: white;
 }
 .bgcolorcontact {
-  background-color: rgb(99,99, 99);
-  color:white;
+  background-color: rgb(99, 99, 99);
+  color: white;
 }
 .bgcolorcontactform {
-  background-color: rgb(89,89, 89);
-  color:white;
+  background-color: rgb(89, 89, 89);
+  color: white;
 }
 .pcolor {
-  background-color: rgb(129,129, 129);
+  background-color: rgb(129, 129, 129);
 }
 .portcolor {
-  background-color: rgb(69,69, 69);
-  color:white;
-  padding-top:30px;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  padding-top: 30px;
   padding-bottom: 30px;
+  list-style: none;
 }
 .cards {
-  background-color: rgb(49,49, 49) !important;
+  background-color: rgb(49, 49, 49) !important;
   border-color: black !important;
-  padding-top:30px;
+  padding-top: 30px;
   padding-bottom: 30px;
-  
-  
- 
-  
 }
-.formy{
-  padding-top:20px;
-  padding-left:20px;
-  padding-right:20px;
-  padding-bottom:20px;
+.formy {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
   border-radius: 25px;
-  opacity: .7;
-  box-shadow: 10px 10px 5px rgb(39,39, 39);
+  opacity: 0.7;
+  box-shadow: 10px 10px 5px rgb(39, 39, 39);
 }
-.contactSpacer{
-  padding-top:100px ;
+.contactSpacer {
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 .page-enter {
@@ -81,7 +76,9 @@
   opacity: 1;
   transition: 300ms ease-out;
 }
-
+.curvy {
+  border-radius: 25px;
+}
 .page-exit {
   opacity: 1;
 }
@@ -89,4 +86,12 @@
 .page-exit-active {
   opacity: 0;
   transition: 300ms ease-in;
+}
+.fullscreen {
+  overflow: auto;
+  padding: 100px 100px;
+  margin: 20px 20px 20px 20px;
+}
+.navbar {
+  background-color: transparent;
 }
