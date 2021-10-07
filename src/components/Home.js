@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <div className="bgcolor text-white">
           <Row className="center">
-            <img src="/barbershop.jpeg" alt="" className="homeimg"/>
+            <img src="./stars.jpg" alt="" className="homeimg"/>
           
             
           </Row>

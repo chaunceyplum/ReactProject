@@ -13,7 +13,7 @@ const ModalComponent = (props) => {
     
     return (
         <div>
-            <Button onClick={toggleModal}>
+            <Button className="bg-transparent" onClick={toggleModal}>
                 Login
             </Button>
             <Modal

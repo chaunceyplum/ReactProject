@@ -20,7 +20,7 @@ const Mynav = (props) => {
             <Container >
             <Navbar fixed="top" color="" dark  expand="md" variant="light">
                 <NavbarBrand className="nav-brand text-light" href="/home">
-                    <h1>
+                    <h1 >
                         Classy Cutz
                     </h1>
                 </NavbarBrand>
@@ -37,11 +37,11 @@ const Mynav = (props) => {
                         </NavItem>
                         
                         <NavItem className="nav-link">
-                            <NavLink href="/contactus">  Contact Us</NavLink>
+                            <NavLink href="/contactus" className="text-white">  Contact Us</NavLink>
                         </NavItem>
 
                         <NavItem className="nav-link">
-                            <NavLink href="/portfolio">  Portfolio</NavLink>
+                            <NavLink href="/portfolio" className="text-white">  Portfolio</NavLink>
                         </NavItem>
                     </Nav>
                     
