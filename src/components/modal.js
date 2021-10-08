@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Button, ModalHeader, ModalBody, Modal, ModalFooter} from 'reactstrap';
 
+
 const ModalComponent = (props) => {
 
     
@@ -32,6 +33,7 @@ const ModalComponent = (props) => {
                     <Button onClick={toggleModal}>
                         Cancel
                     </Button>
+                    
                     <Button onClick={toggleModal}>
                         login
                     </Button>

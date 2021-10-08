@@ -4,12 +4,13 @@ import React from 'react'
 import { Row, Col} from 'reactstrap'
 import '../App.css'
 
+
 const Home = () => {
     
     return (
         <div className="bgcolor text-white">
           <Row className="center">
-            <img src="./stars.jpg" alt="" className="homeimg"/>
+          <img src="./stars.jpg" alt="" className="homeimg"/>            
           
             
           </Row>
@@ -31,12 +32,12 @@ const Home = () => {
               <img src="/cut4.jpeg" alt="" className="homeflick"/>
             </Col>
           </Row>
-          <Row>
+          {/* <Row>
 
           </Row>
           <Row>
 
-          </Row>
+          </Row> */}
           <Row  className="center pcolor fullscreen">
             <h1 className="footercolor curvy"><strong>Barber Job Description</strong></h1>
             <p className="portcolor curvy">
