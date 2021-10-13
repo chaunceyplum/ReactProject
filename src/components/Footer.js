@@ -7,7 +7,7 @@ import { Col, Row } from 'reactstrap'
 
 const Footer = () => {
     return (
-        <div className="footercolor">
+        <div className="darkbg">
             <Row className="text-center spacer" color="dark">
                 <h1>Our Location</h1>
                 <p className="spacer">1179 Chauncey St, Brooklyn, NY, 11233</p>

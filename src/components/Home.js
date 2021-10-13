@@ -8,48 +8,49 @@ import '../App.css'
 const Home = () => {
     
     return (
-        <div className="bgcolor text-white">
+        <div className="pcolor text-white">
           <Row className="center">
           <img src="./stars.jpg" alt="" className="homeimg"/>            
           
             
           </Row>
-          <Row className="fullscreen">
+          <Row className="fullscreen portcolor">
           <h1 className="spacer center footercolor curvy">Authentic & Old~Fashioned</h1> 
-            <p className="spacer pcolor center curvy">
+            <p className="spacer footercolor center curvy">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
             </p>
           </Row>
           
-          <Row className="fullscreen footercolor curvy">
-            <Col>
+          
+            <Row  className="spacer center portcolor" >
               <img src="/cut3.jpeg"  alt="" className="homeflick"/>
-            </Col>
-            <Col>
+            </Row>
+            <Row  className=" spacer center portcolor">
               <img src="/cut5.jpeg" alt="" className="homeflick"/>
-            </Col>
-            <Col>
+            </Row>
+            <Row  className=" spacer center portcolor">
               <img src="/cut4.jpeg" alt="" className="homeflick"/>
-            </Col>
-          </Row>
+            </Row>
+          
           {/* <Row>
 
           </Row>
           <Row>
 
           </Row> */}
-          <Row  className="center pcolor fullscreen">
+          
+          <Row  className="fullscreen center portcolor ">
             <h1 className="footercolor curvy"><strong>Barber Job Description</strong></h1>
-            <p className="portcolor curvy">
+            <p className="footercolor curvy">
               We are looking to hire a dedicated barber to consult with clients and ensure that all their hair-related needs are taken care of. The barber’s responsibilities include cutting, trimming, styling, and coloring client’s hair according to their instructions, fitting and grooming hairpieces, and billing clients. You should also be able to provide hairstyle suggestions and haircare advice to clients.
             </p>
-            <p className="portcolor curvy">
+            <p className="footercolor curvy">
               To be successful as a barber, you should be able to provide quality facial hair grooming services to clients. Ultimately, a top-notch barber should keep abreast of new and emerging hairstyles and trends.
             </p>
             <h1 className="footercolor curvy">
               <strong>Barber Responsibilities: </strong>
             </h1>
-            <ul className="portcolor curvy">
+            <ul className="footercolor curvy">
               <li>
                 Welcoming clients and consulting with them on their desired hairstyles.
               </li>
@@ -80,7 +81,7 @@ const Home = () => {
 
             </ul>
           </Row>
-
+          
         </div>
     )
 }

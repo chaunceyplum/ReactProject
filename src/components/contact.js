@@ -16,8 +16,8 @@ const validPassword = val => /^(?=.*\d)[a-zA-Z0-9]{8,16}$/
 
     return (
             <div className="bgcolor contactSpacer ">
-                <Container className="bgcolorcontact formy">
-                    <LocalForm className="bgcolorcontact">
+                <Container className="bgcolorcontact formy portcolor">
+                    <LocalForm className="bgcolorcontact portcolor">
                         <h1 className="text-center">
                             Sign Up
                         </h1>
