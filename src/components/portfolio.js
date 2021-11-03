@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import axios from 'axios';
+import React, { useState,setState } from 'react'
 import { Col, Row,Card,CardTitle,CardBody,CardImg, CardText, CardHeader, CardImgOverlay } from 'reactstrap'
 
 
@@ -33,11 +34,24 @@ class Portfolio extends React.Component {
             baldyDescription: "A baldy cut is a great choice for men for a lot of different reasons. Firstly, they are very easy to style and maintain. When you get up in the morning, you do not need to take a long time fiddling with your look.",
             loading: true,
             
+            items:[],
+            dataIsLoaded:false
+
+
+
         }
     }
 
     
-   
+    fetchy = () => {
+        const url = "http://localhost:3000/"
+        axios.get(`${url}`)
+        .then((res)=> {
+            const allCuts = res.cuts
+            this.state.items.setState(allCuts)
+        })
+        
+   }
     
     
     
@@ -60,7 +74,6 @@ class Portfolio extends React.Component {
                     <h1 className="center spacer">My Specialty Cuts</h1>
                     
                         
-                            
                         
                         
 

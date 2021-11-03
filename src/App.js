@@ -3,6 +3,7 @@ import React from 'react'
 import './App.css';
 import Mynav from './components/nav';
 import Portfolio from './components/portfolio'
+import Port from './components/Port'
 import Home from './components/Home'
 import Footer from './components/Footer'
 import Contact from './components/contact'
@@ -35,7 +36,7 @@ class App extends React.Component{
     }
     const PortfolioPage = () => {
       return (
-        <Portfolio />
+        <Port />
       )
     }
 
@@ -52,7 +53,7 @@ class App extends React.Component{
                       <Route path='/contactus' component={ContactPage} />
 
                       <Route path='/portfolio'component={PortfolioPage} />
-                      <Route exact path ='/portfolio' render={() =>{<Portfolio Cuts={this.state.Cuts} />}}  />
+                      {/* <Route exact path ='/portfolio' render={() =>{<Portfolio />}}  /> */}
                       <Redirect to ='/home' />
 
                     </Switch>
