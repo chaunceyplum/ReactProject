@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { Card, CardBody, CardHeader, CardImg, CardSubtitle, CardTitle } from 'reactstrap'
+import { Card, CardBody, CardHeader, CardImg, CardSubtitle, CardTitle, Col, Container, Row } from 'reactstrap'
 
 const Port = () => {
     
@@ -36,42 +36,56 @@ const Port = () => {
 
     
     
-
-
-
-
-
-
-            {
+            <Row>
                 
-                cuts.length > 0 && cuts.map(
-                    (cut, index)=> {
-                        console.log(cut)
-                        return(
-                            
-                                <Card key={index} bg='dark' className="cards">
-                                    <CardHeader className="cards">
-                                        <CardTitle >
-                                        {cut.Name}
-                                        </CardTitle>
-                                        <CardSubtitle >
-                                            {`$${cut.Price}`}
-                                        </CardSubtitle>
-                                    </CardHeader>
-                                    <CardImg src={cut.Image} />
-                                    <CardBody>
+                    {
+                    
+                        cuts.length > 0 && cuts.map(
+                            (cut, index)=> {
+                                console.log(cut)
+                                return(
+                                    
                                         
-                                        <p >
-                                            {cut.Description}
-                                        </p>
-                                    </CardBody>
-                                </Card>
-                            
+                                    <Col xs={12}   lg={6} className="center rounded ">
+                                        <Card  key={index} bg='dark' className=" center cards spacer formy rounded">
+                                            <CardHeader className="cards">
+                                                <CardTitle >
+                                                    <h3 className="text-white">
+                                                    {cut.Name}
+                                                    </h3>
+                                                </CardTitle>
+                                                <CardSubtitle >
+                                                    <h3>
+                                                    {`$${cut.Price}`}
+                                                    </h3>
+                                                </CardSubtitle>
+                                            </CardHeader>
+                                            <CardImg src={cut.Image} className="col-8" />
+                                            <CardBody>
+                                                
+                                                <p >
+                                                    {cut.Description}
+                                                </p>
+                                            </CardBody>
+                                        </Card>
+                                        <br />
+                                        <br />
+                                    </Col>
+                                )
+                            }
                         )
+                
                     }
-                )
-               
-            }
+
+
+                
+            </Row>
+
+
+
+
+
+        
             
         </div>
     )

@@ -11,6 +11,10 @@ var app = express();
 
 var port =3000
 
+const jwt = require('jsonwebtoken')
+
+
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -22,7 +26,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/api', usersRouter);
 app.use('/cuts', cutsRouter)
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -49,12 +53,28 @@ app.all('*', (req, res, next) => {
 });
 
 
-// const cors = require('./routes/cors');
-// app.use(cors({
-//     origin: ['http://localhost:3002', 'https://www.google.com/'],
-//     methods:['GET']
-// }));
-// app.use(cors())
+
+
+// app.post('/login', (req, res, next) => {
+
+//   const username =req.body.username
+//   const user = {name: username}
+
+//   const accessToken = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET)
+//   res.json({ accessToken:accessToken })
+// })
+
+// const auth = (req, res, next) => {
+//   const authHeader = req.headers('authorization')
+//   const token = authHeader && authHeader.split(' ')[1]
+//   if (token == null) return res.sendStatus(401)
+
+//   jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
+//     if (err) return res.sendStatus(403)
+//     req.user = user
+//     next()
+//   })
+// }
 
 
 app.listen(80, () => {

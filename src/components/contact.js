@@ -24,7 +24,7 @@ const validPassword = val => /^(?=.*\d)[a-zA-Z0-9]{8,16}$/
                         <Row className="form-group">
                             <Label htmlFor="name" className="text-center spacer" placeholder="name">Name</Label>
                             <Col />
-                            <Col className="col-8 center align-center" xs={10}>
+                            <Col className="col-4 center align-center" xs={6} lg={4}>
                                 <Control.text model=".firstName" className="text-center" id="firstName" name="firstName" placeholder="First Name" className="form-control" validators={{ required, minLength: minLength(2), maxLength: maxLength(15)}} />
                                 <Errors
                                         className="text-danger"
@@ -43,7 +43,7 @@ const validPassword = val => /^(?=.*\d)[a-zA-Z0-9]{8,16}$/
                         <Row className="form-group">
                             <Label htmlFor="lastName" className="text-center spacer" >Last Name</Label>
                             <Col />
-                            <Col className="col-8 center" xs={10}>
+                            <Col className="col-4 center" xs={6} lg={4}>
                                 <Control.text model=".lastName" id="lastName" name="lastName" placeholder="Last Name" className="form-control" validators={{ required, minLength: minLength(2), maxLength: maxLength(15)}}  />
                                 <Errors
                                         className="text-danger"
@@ -63,7 +63,7 @@ const validPassword = val => /^(?=.*\d)[a-zA-Z0-9]{8,16}$/
                         <Row className="form-group">
                             <Label htmlFor="email"  className="text-center spacer" >Email</Label>
                             <Col />
-                            <Col className="col-8 center" xs={10}>
+                            <Col className="col-4 center" xs={6} lg={4}>
                                 <Control.text model=".email" id="email" name="email" placeholder="Email" className="form-control" validators={{required, validEmail}} />
                                 <Errors
                                         className="text-danger"
@@ -84,7 +84,7 @@ const validPassword = val => /^(?=.*\d)[a-zA-Z0-9]{8,16}$/
                                 Password
                             </Label>
                             <Col />
-                            <Col className="col-8 center " xs={10}>
+                            <Col className="col-4 center " xs={6} lg={4}>
                                 <Control.text model=".password" id="password" name="password" placeholder="Password" className="form-control" validators={{required, validPassword}} />
                                 <Errors
                                         className="text-danger"
