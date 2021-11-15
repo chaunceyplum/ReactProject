@@ -33,15 +33,15 @@ const Mynav = (props) => {
                 <Collapse isOpen={isOpen} navbar  className="justify-content-end">
                     <Nav className="ml-auto " bsStyle="pills" navbar>
                         <NavItem className="nav-link">
-                            <NavLink className="text-white" href="/home"> Home</NavLink>
+                            <NavLink className="text-white" href="https://chaunceyplum.github.io/ReactProject/home"> Home</NavLink>
                         </NavItem>
                         
                         <NavItem className="nav-link">
-                            <NavLink href="/contactus" className="text-white">  Sign up </NavLink>
+                            <NavLink href="https://chaunceyplum.github.io/ReactProject/contactus" className="text-white">  Sign up </NavLink>
                         </NavItem>
 
                         <NavItem className="nav-link">
-                            <NavLink href="/portfolio" className="text-white">  Portfolio</NavLink>
+                            <NavLink href="https://chaunceyplum.github.io/ReactProject/portfolio" className="text-white">  Portfolio</NavLink>
                         </NavItem>
                     </Nav>
                     
