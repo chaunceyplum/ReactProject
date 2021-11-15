@@ -1,4 +1,5 @@
 {
+  "homepage": "https://chaunceyplum.github.io/ReactProject/",
   "name": "barbershop",
   "version": "0.1.0",
   "private": true,
@@ -11,18 +12,12 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "Homepage": "https://github.com/chaunceyplum/ReactProject",
     "axios": "^0.22.0",
     "bootstrap": "^5.0.2",
-    "mongodb": "^3.6.2",
-    "mongoose": "^5.10.9",
-    "mongoose-currency": "^0.2.0",
-    "nodemon": "^2.0.12",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-image": "^4.0.3",
     "react-loading": "^2.0.3",
-    "react-lottie": "^1.2.3",
     "react-mailto": "^0.4.0",
     "react-redux": "^7.2.4",
     "react-redux-form": "^1.16.14",
@@ -39,7 +34,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "barbershop -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -58,5 +53,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
