@@ -4,7 +4,7 @@
         mohawkName: "Mohawk",
         mohawkPrice: 20,
         mohawkImage: '/mohawk.jpeg',
-        mohawkdescription: "mohawk (also referred to as a Mohican) is a hairstyle in which, in the most common variety, both sides of the head are shaven, leaving a strip of noticeably longer hair in the center. It is today worn as an emblem of non-conformity.",
+        mohawkdescription: "mohawk (also referred to as a Mohican) is a hairstyle in which, in the most common variety, both sides of the head are shaven, leaving a strip of noticeably longer hair in the center. It is today worn as an emblem of non-conformity. ",
     
     
        
