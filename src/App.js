@@ -48,13 +48,13 @@ class App extends React.Component{
 
                     <Switch>
 
-                      <Route path='https://chaunceyplum.github.io/ReactProject/home' component={HomePage} />
+                      <Route path='/home' component={HomePage} />
                       
-                      <Route path='https://chaunceyplum.github.io/ReactProject/contactus' component={ContactPage} />
+                      <Route path='/contactus' component={ContactPage} />
 
-                      <Route path="https://chaunceyplum.github.io/ReactProject/portfolio" component={PortfolioPage} />
+                      <Route path="/portfolio" component={PortfolioPage} />
                       {/* <Route exact path ='/portfolio' render={() =>{<Portfolio />}}  /> */}
-                      <Redirect to ='https://chaunceyplum.github.io/ReactProject/home' />
+                      <Redirect to ='/home' />
 
                     </Switch>
                   
