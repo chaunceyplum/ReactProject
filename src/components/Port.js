@@ -7,7 +7,7 @@ const Port = () => {
     const [cuts, setCuts] = useState([])
     
     useEffect(() => {
-        fetch('https://localhost:3000/',{
+        fetch('https://classycutzbackend.herokuapp.com/',{
            method:'GET',
            mode:'cors',
            headers: {
